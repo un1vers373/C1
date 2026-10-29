@@ -5,23 +5,15 @@ namespace c1
     {
         static void Main()
         {
-            Console.WriteLine("Введите первое число: ");
-            int a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Введите второе число: ");
-            int b = int.Parse(Console.ReadLine());
+        Console.WriteLine("Введите первое число: ");
+string input = Console.ReadLine();
+int number = int.Parse(input);
 
-            if (a > b)
-            {
-                Console.WriteLine("Первое число больше второго!");
-            }
-            else if (a == b)
-            {
-                Console.WriteLine("Оба числа равны!");
-            }
-            else 
-            {
-                Console.WriteLine("ой, косяк попробуйте снова :(");
-            }
+Console.WriteLine("Введите второе число: ");
+string input1 = Console.ReadLine();
+int number1 = int.Parse(input1);
+
+Console.WriteLine("Сумма: " + (number + number1));
         }
     }
 }
